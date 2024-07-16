@@ -87,7 +87,7 @@ MessageCreator::createLaserScanMsg(const sick::datastructure::Data &data,
                        1e-3; // mm -> m
       // Set values close to/greater than max range to infinity according to REP
       // 117 https://www.ros.org/reps/rep-0117.html
-      if (scan.ranges[i] >= (0.999 * m_range_max) || scan.ranges[i] <= 0.4) {
+      if (scan.ranges[i] >= (0.999 * m_range_max) || scan.ranges[i] <= 0.45) {
         scan.ranges[i] = std::numeric_limits<double>::infinity();
       }
     } else {

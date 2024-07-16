@@ -11,8 +11,8 @@ def generate_launch_description():
             emulate_tty=True,
             parameters=[
                 {"frame_id": "scan",
-                 "sensor_ip": "192.168.1.11",
-                 "host_ip": "192.168.1.9",
+                 "sensor_ip": "172.16.40.6",
+                 "host_ip": "192.168.124.226",
                  "interface_ip": "0.0.0.0",
                  "host_udp_port": 0,
                  "channel": 0,

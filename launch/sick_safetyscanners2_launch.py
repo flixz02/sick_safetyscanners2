@@ -10,9 +10,9 @@ def generate_launch_description():
             output="screen",
             emulate_tty=True,
             parameters=[
-                {"frame_id": "scan",
-                 "sensor_ip": "192.168.1.11",
-                 "host_ip": "192.168.1.9",
+                {"frame_id": "base_laser",
+                 "sensor_ip": "172.16.40.6",
+                 "host_ip": "172.16.40.12",
                  "interface_ip": "0.0.0.0",
                  "host_udp_port": 0,
                  "channel": 0,
